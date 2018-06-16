@@ -1,0 +1,64 @@
+
+package animals;
+
+abstract class Animals {
+    String name;                                         //Abstract Class
+    String color;
+    String breed;
+    
+    abstract void Eat();
+    public void Speak()   {
+    System.out.println("I am Animal");
+}
+
+    public static void main(String[] args) {
+        Cat cat=new Cat();
+        cat.Speak();
+        cat.Eat();
+        Dog dog = new Dog();
+        dog.Speak();
+        dog.Eat();
+        
+        
+    }
+    
+}
+
+
+
+package animals;
+
+public class Cat extends Animals {
+    String breed="Persian";
+    String color="Brown";                                     //Derived Class Overriding Parent's Functions
+    String name="Lusi";
+    
+    void Eat() {
+        System.out.println("I eat Rats");
+        
+    }
+   public void Speak() {
+        System.out.println("My name is "+name+" I am a "+breed+" Cat of colour "+color);
+    }
+    
+}
+
+
+
+package animals;
+
+public class Dog extends Animals{
+     String breed="Lebra";
+     String color="Black";                                   //Derived Class Overriding Parent's Functions
+     String name="Buddy";
+    void Eat() {
+        System.out.println("I eat Bones");
+        
+    }
+    public void Speak() {
+        System.out.println("My name is "+name+"I am a "+breed+"Dog of colour "+color);
+        
+    }
+    
+}
+

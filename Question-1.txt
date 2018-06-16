@@ -1,0 +1,54 @@
+
+package assignment6;
+
+
+public interface Animals {                                            //Animals Interface
+    
+    public void Speak();
+    public void Eat();
+    
+}
+
+
+
+package assignment6;
+
+public class Cat implements Animals  {                                  //Class Cat Implementing Animals Interface
+    public void Eat() {
+        System.out.println("I eat Rats");
+    }
+    public void Speak() {
+        System.out.println("I am Cat");
+        
+    }
+
+    public static void main(String[] args) {
+        Cat cat=new Cat();
+        cat.Speak();
+        cat.Eat();
+        
+    }
+    
+}
+
+
+
+package assignment6;
+
+public class Dog implements Animals{ 						//Class Cat Implementing Animals Interface
+    public void Eat() {
+        System.out.println("I eat Bones");
+        
+    }
+    public void Speak() {
+        System.out.println("I am Dog");
+        
+    }
+    public static void main(String args[]) {
+        Dog dog=new Dog();
+        dog.Speak();
+        dog.Eat();
+        
+    }
+    
+}
